@@ -1,6 +1,7 @@
 /*
 
 !/dist
+!/.github
 !/.env
 !/.gitignore
 !/docker-compose.yml
