@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Install the Wifi Button!</title>
+    <style>
+        body {
+            background: #3f3635;
+            color: rgba(255, 255, 255, 0.81);
+            text-align: center;
+            max-width: 550px;
+            margin: auto;
+            padding: 2em;
+            font-family: Helvetica, Tahoma, Verdana, Geneva, sans-serif;
+        }
+
+        main {
+            margin-top: 2rem;
+        }
+
+        main ol {
+            text-align: left;
+            margin: auto;
+            max-width: 400px;
+            padding: 2rem 0;
+        }
+
+        main ol li {
+            margin: .7em 3em;
+        }
+
+        .button {
+            padding: 1em;
+        }
+
+        .button button {
+            width: 144px;
+            height: 144px;
+            border: none;
+            border-radius: 50%;
+            background: #ff4907;
+            display: block;
+            margin: auto;
+            position: relative;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            box-shadow: #c45008 0px 0px 0px 12px;
+        }
+
+        .button button:hover {
+            background: #c45008;
+            transform: scale(1.1);
+            box-shadow: #c45008 0px 0px 0px 4px;
+        }
+
+        .button button:active {
+            background: #ffece0;
+            transform: scale(1.0);
+            box-shadow: #c45008 0px 0px 0px 4px;
+        }
+
+        footer {
+            margin-top: 2rem;
+            font-size: 0.8rem;
+        }
+    </style>
+    <script type="module" src="https://unpkg.com/esp-web-tools@7.0.0/dist/web/install-button.js?module"></script>
+</head>
+
+<body>
+    <main>
+        <h1>Wifi Button</h1>
+        <div class="button">
+            <button id="button" title="Don't do it!"></button>
+        </div>
+        <ol>
+            <li>Connect the ESP device to your computer using USB or serial-to-USB adapter</li>
+            <li>Hit "Install" and select the correct port </li>
+        </ol>
+
+        <p>
+            <esp-web-install-button id="install" manifest="/manifests/manifest.json">
+                <i slot="unsupported">
+                    Your browser does not support Web Serial.</br>Open this page in Google Chrome or</br>Microsoft
+                    Edge
+                    instead
+                    <span class="not-supported-i hidden">(but not on your iOS device)</span>.
+                </i>
+            </esp-web-install-button>
+        </p>
+    </main>
+    <footer>
+        <hr>
+        <a href="https://esphome.github.io/esp-web-tools/" target='_blank' style='color:#aaa;'>Tasmota Installer powered
+            by ESP Web Tools
+        </a>
+    </footer>
+    <script>
+        var button = document.querySelector('.button');
+        button.addEventListener('click', function () {
+            console.log('%c 🌈  Oh my heavens! You have finally clicked the button! ', 'background: pink; color: #333;padding: 1rem;');
+        });
+    </script>
+</body>
+
+</html>

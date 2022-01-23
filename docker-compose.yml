@@ -1,0 +1,24 @@
+version: '3.5'
+
+services:
+  httpd:
+    image: netresearch/node-webserver
+    container_name: ${COMPOSE_PROJECT_NAME}-httpd
+    labels:
+      - traefik.enable=true
+      - traefik.docker.network=${NETWORK}
+      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.rule=Host(${DOMAINS})
+      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.entrypoints=https
+      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls=true
+      - traefik.http.routers.${COMPOSE_PROJECT_NAME}.tls.certresolver=letsencrypt
+      - traefik.http.services.${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=${PORT}
+    expose:
+      - ${PORT}
+    volumes:
+      - ./data/httpd/:/app/public:ro
+    restart: unless-stopped
+
+networks:
+  default:
+    external:
+      name: ${NETWORK}
