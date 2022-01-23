@@ -562,9 +562,10 @@ surge-ignore@0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/surge-ignore/-/surge-ignore-0.2.0.tgz#5a7f8a20a71188cf9e75a2cfe8eb182de90daf3b"
 
-surge@^0.23.1:
+surge@0.23.1:
   version "0.23.1"
   resolved "https://registry.yarnpkg.com/surge/-/surge-0.23.1.tgz#3cb283edad4e632e27162c633863ef4a915b961d"
+  integrity sha512-w92meVuKxqO1up0JpSe2iVSiVTv7E7t1qDA9fZhCSZx/+6Q85I3Y2LCoZIcWLpMm9BM0iB843NAWAwdScTR4Uw==
   dependencies:
     cli-table3 "^0.5.1"
     colors "1.4.0"
