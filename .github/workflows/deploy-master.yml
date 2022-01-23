@@ -19,11 +19,10 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
           cache: 'npm'
-      - name: Install Packages
-        run: yarn && env
-      - name: Surge deploy
+      - name: Install Packages & deploy
+        run: yarn && yarn deploy
+        working-directory: .
         env:
           CI: false # CRA treats warnings as errors in CI - re-enable if needed
           SURGE_LOGIN: ${{ secrets.SURGE_LOGIN }}
           SURGE_TOKEN: ${{ secrets.SURGE_TOKEN }}
-        run: yarn deploy
