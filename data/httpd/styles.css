@@ -1,0 +1,69 @@
+  :root {
+      --clr-primary: #ff4907;
+      --clr-secondary: #c45008;
+      --clr-background: #3f3635
+  }
+
+  body {
+      background: var(--clr-background);
+      color: rgba(255, 255, 255, 0.81);
+      text-align: center;
+      max-width: 550px;
+      margin: auto;
+      padding: 2em;
+      font-family: Helvetica, Tahoma, Verdana, Geneva, sans-serif;
+  }
+
+  main {
+      margin-top: 2rem;
+  }
+
+  main ol {
+      text-align: left;
+      margin: auto;
+      max-width: 400px;
+      padding: 2rem 0;
+  }
+
+  main ol li {
+      margin: .7em 3em;
+  }
+
+  .button {
+      padding: 1em;
+  }
+
+  .button button {
+      display: block;
+      position: relative;
+      width: 144px;
+      height: 144px;
+      border: none;
+      border-radius: 50%;
+      background: var(--clr-primary);
+      margin: auto;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      box-shadow: var(--clr-secondary) 0px 0px 0px 12px;
+      color: white;
+      font-size: 3rem;
+  }
+
+  .button button:hover {
+      background: var(--clr-secondary);
+      transform: scale(1.1);
+      box-shadow: var(--clr-secondary) 0px 0px 0px 4px;
+  }
+
+  .button button:active {
+      background: #ffece0;
+      transform: scale(1.0);
+      box-shadow: var(--clr-secondary) 0px 0px 0px 4px;
+  }
+
+  footer {
+      border-top: 1px solid #aaa;
+      margin-top: 2rem;
+      padding-top: 1rem;
+      font-size: 0.8rem;
+  }
