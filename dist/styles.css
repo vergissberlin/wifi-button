@@ -1,7 +1,8 @@
   :root {
       --clr-primary: #ff4907;
       --clr-secondary: #c45008;
-      --clr-background: #3f3635
+      --clr-background: #3f3635;
+      --gray-500: #aaa;
   }
 
   body {
@@ -12,6 +13,14 @@
       margin: auto;
       padding: 2em;
       font-family: Helvetica, Tahoma, Verdana, Geneva, sans-serif;
+  }
+
+  a {
+      color: var(--gray-500);
+  }
+
+  a:hover {
+      color: var(--clr-secondary);
   }
 
   main {
@@ -66,4 +75,17 @@
       margin-top: 2rem;
       padding-top: 1rem;
       font-size: 0.8rem;
+  }
+
+  footer ul {
+      display: inline;
+      margin: auto;
+      padding: 0;
+      max-width: 400px;
+  }
+
+  footer ul li {
+      display: inline-block;
+      margin: 0 1em;
+      list-style-type: none;
   }

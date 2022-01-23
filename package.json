@@ -1,0 +1,14 @@
+{
+    "name": "wifi-button",
+    "version": "1.0.0",
+    "description": "WiFi button for your IoT projects.",
+    "repository": "git@github.com:vergissberlin/wifi-button.git",
+    "author": "André Lademann <vergissberlin@googlemail.com>",
+    "license": "MIT",
+    "scripts": {
+        "deploy": "./node_modules/.bin/surge --project dist"
+    },
+    "devDependencies": {
+        "surge": "^0.23.1"
+    }
+}

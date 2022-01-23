@@ -1,0 +1,8 @@
+/*
+
+!/dist
+!/.env
+!/.gitignore
+!/docker-compose.yml
+!/package.json
+!/yarn.lock
