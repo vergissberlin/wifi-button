@@ -2,7 +2,10 @@ version: '3.5'
 
 services:
   httpd:
-    image: netresearch/node-webserver
+    image: vergissberlin/wifi-button
+    build:
+      context: .
+      dockerfile: Dockerfile
     container_name: ${COMPOSE_PROJECT_NAME}-httpd
     labels:
       - traefik.enable=true
@@ -14,8 +17,6 @@ services:
       - traefik.http.services.${COMPOSE_PROJECT_NAME}.loadbalancer.server.port=${PORT}
     expose:
       - ${PORT}
-    volumes:
-      - ./data/httpd/:/app/public:ro
     restart: unless-stopped
 
 networks:

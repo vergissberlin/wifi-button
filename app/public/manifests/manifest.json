@@ -1,0 +1,25 @@
+{
+    "name": "WiFi-Button",
+    "version": "1.0.1",
+    "new_install_prompt_erase": true,
+    "builds": [
+        {
+            "chipFamily": "ESP8266",
+            "parts": [
+                {
+                    "path": "../releases/wifi-button.esp8266.bin",
+                    "offset": 0
+                }
+            ]
+        },
+        {
+            "chipFamily": "ESP32",
+            "parts": [
+                {
+                    "path": "../releases/wifi-button.esp32.bin",
+                    "offset": 0
+                }
+            ]
+        }
+    ]
+}
