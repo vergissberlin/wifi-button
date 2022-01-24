@@ -1,7 +1,9 @@
 /*
 
-!/dist
 !/.github
+!/dist
+!/wifi-button
+
 !/.env
 !/.gitignore
 !/docker-compose.yml
