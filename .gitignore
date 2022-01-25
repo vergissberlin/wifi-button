@@ -9,6 +9,7 @@
 !/docker-compose.yml
 !/Dockerfile
 !/package.json
+!/README.md
 !/yarn.lock
 
 /**/arduino_secrets.h
