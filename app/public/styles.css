@@ -3,6 +3,7 @@
       --clr-secondary: #c45008;
       --clr-background: #3f3635;
       --gray-500: #aaa;
+      --clr-white: #fff;
   }
 
   body {
@@ -52,7 +53,7 @@
       background: var(--clr-primary);
       margin: auto;
       cursor: pointer;
-      transition: all 0.3s ease-in-out;
+      transition: all 0.2s ease-out;
       box-shadow: var(--clr-secondary) 0px 0px 0px 12px;
       color: white;
       font-size: 3rem;
@@ -71,7 +72,7 @@
   }
 
   footer {
-      border-top: 1px solid #aaa;
+      border-top: 1px solid var(--clr-gray-500);
       margin-top: 2rem;
       padding-top: 1rem;
       font-size: 0.8rem;
