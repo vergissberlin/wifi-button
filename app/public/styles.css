@@ -53,7 +53,7 @@
       background: var(--clr-primary);
       margin: auto;
       cursor: pointer;
-      transition: all 0.2s ease-out;
+      transition: all 0.1s ease-out;
       box-shadow: var(--clr-secondary) 0px 0px 0px 12px;
       color: white;
       font-size: 3rem;
