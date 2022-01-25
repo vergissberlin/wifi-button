@@ -6,7 +6,17 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+      args_from_env:
+        - SECRET_WIFI_SSID
+        - SECRET_WIFI_PASSWORD
+        - SECRET_MQTT_HOST
+        - SECRET_MQTT_USERNAME
+        - SECRET_MQTT_PASSWORD
+        - SECRET_MQTT_TOPIC
+        - SECRET_MQTT_PORT
+        - SECRET_MQTT_CLIENT_ID
     container_name: ${COMPOSE_PROJECT_NAME}-httpd
+
     labels:
       - traefik.enable=true
       - traefik.docker.network=${NETWORK}
