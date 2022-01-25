@@ -1,8 +1,6 @@
 # WiFi Button
 
-<center>
-    <img src="app/public/img/wifi-button.svg" align="center" width="70%" alt="Do NOT oush it!">
-</center>
+<img src="app/public/img/wifi-button.svg" alt="Do NOT push it!" width="70%" style="display: block; margin: 0 auto" />
 
 ## Build
 
