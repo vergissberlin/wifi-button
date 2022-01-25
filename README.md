@@ -1,6 +1,8 @@
 # WiFi Button
 
-![](app/public/img/wifi-button.svg)
+<center>
+    <img src="app/public/img/wifi-button.svg" align="center" width="70%" alt="Do NOT oush it!">
+</center>
 
 ## Build
 
