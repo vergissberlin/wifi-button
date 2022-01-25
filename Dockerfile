@@ -1,4 +1,4 @@
-FROM python:3.7-slim as builder
+FROM python:3.10-slim as builder
 
 ARG ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS="https://arduino.esp8266.com/stable/package_esp8266com_index.json https://dl.espressif.com/dl/package_esp32_index.json"
 ENV ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS="${ARDUINO_BOARD_MANAGER_ADDITIONAL_URLS}"
