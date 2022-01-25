@@ -6,7 +6,7 @@
     "author": "André Lademann <vergissberlin@googlemail.com>",
     "license": "MIT",
     "scripts": {
-        "deploy": "./node_modules/.bin/surge --project dist"
+        "deploy": "./node_modules/.bin/surge --project app/public"
     },
     "devDependencies": {
         "surge": "0.23.1"
