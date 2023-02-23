@@ -9,3 +9,10 @@
 ```bash
 docker-compose build
 ```
+
+## Licenses
+
+- AirHorn [Apache 2.0]()
+- https://github.com/GoogleChromeLabs/airhorn/tree/main/app
+- https://www.webcomponents.org/element/PaulKinlan/air-horner
+- https://airhorner.com/
