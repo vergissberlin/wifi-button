@@ -39,36 +39,28 @@
       margin: .7em 3em;
   }
 
-  .button {
-      padding: 1em;
+  h1 {
+      font-family: Impact, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 412%;
   }
 
-  .button button {
-      display: block;
+  .bear {
       position: relative;
-      width: 144px;
-      height: 144px;
-      border: none;
-      border-radius: 50%;
-      background: var(--clr-primary);
-      margin: auto;
-      cursor: pointer;
-      transition: all 0.1s ease-out;
-      box-shadow: var(--clr-secondary) 0px 0px 0px 12px;
-      color: white;
-      font-size: 3rem;
+      width: 400px;
   }
 
-  .button button:hover {
-      background: var(--clr-secondary);
-      transform: scale(1.1);
-      box-shadow: var(--clr-secondary) 0px 0px 0px 4px;
-  }
-
-  .button button:active {
-      background: #ffece0;
-      transform: scale(1.0);
-      box-shadow: var(--clr-secondary) 0px 0px 0px 4px;
+  .bear::before {
+      content: "asd";
+      position: absolute;
+      z-index: -1;
+      bottom: -10%;
+      left: 10%;
+      width: 80%;
+      height: 40%;
+      border: red solid 1px;
+      box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.3);
+      transform: skewY(-5deg);
+      transform-origin: 0 100%;
   }
 
   footer {
@@ -89,126 +81,4 @@
       display: inline-block;
       margin: 0 1em;
       list-style-type: none;
-  }
-
-
-
-  .horn {
-      height: 200px;
-      width: 200px;
-      height: 50vmin;
-      width: 50vmin
-  }
-
-  .horn .inner {
-      height: 160px;
-      width: 160px;
-      height: 40vmin;
-      width: 40vmin
-  }
-
-  .horn .inner .center {
-      height: 20px;
-      width: 20px;
-      height: 5vmin;
-      width: 5vmin
-  }
-
-  @keyframes a {
-      0% {
-          width: 20px;
-          height: 20px;
-          width: 5vmin;
-          height: 5vmin
-      }
-
-      to {
-          width: 18.4px;
-          height: 21.6px;
-          width: 4.6vmin;
-          height: 5.4vmin
-      }
-  }
-
-  @keyframes b {
-      0% {
-          height: 160px;
-          width: 160px;
-          width: 40vmin;
-          height: 40vmin
-      }
-
-      to {
-          height: 160.8px;
-          width: 160.4px;
-          width: 40.2vmin;
-          height: 40.1vmin
-      }
-  }
-
-  @keyframes c {
-      0% {
-          height: 200px;
-          width: 200px;
-          width: 50vmin;
-          height: 50vmin
-      }
-
-      to {
-          width: 200.4px;
-          height: 200.8px;
-          width: 50.1vmin;
-          height: 50.2vmin
-      }
-  }
-
-  .horn {
-      background-color: #f44336;
-      box-shadow: 0 5px 2px 0 #1565c0;
-      transition: box-shadow .2s cubic-bezier(.4, 0, 1, 1)
-  }
-
-  .horn, .horn .inner {
-      border-radius: 50%;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-align: center;
-      align-items: center;
-      -ms-flex-pack: center;
-      justify-content: center
-  }
-
-  .horn .inner {
-      background-color: #b71c1c
-  }
-
-  .horn .inner .center {
-      background-color: #000;
-      opacity: .9;
-      border-radius: 50%
-  }
-
-  .horn.horning {
-      box-shadow: 0 0 0 0 #1565c0;
-      animation-name: c;
-      animation-iteration-count: infinite;
-      animation-direction: alternate
-  }
-
-  .horn.horning, .horn.horning .inner {
-      animation-duration: 10ms
-  }
-
-  .horn.horning .inner {
-      animation-name: b
-  }
-
-  .horn.horning .center, .horn.horning .inner {
-      animation-iteration-count: infinite;
-      animation-direction: alternate
-  }
-
-  .horn.horning .center {
-      animation-duration: 50ms;
-      animation-name: a
   }
