@@ -9,6 +9,6 @@
         "deploy": "./node_modules/.bin/surge --project app/public"
     },
     "devDependencies": {
-        "surge": "0.23.1"
+        "surge": "0.24.6"
     }
 }
